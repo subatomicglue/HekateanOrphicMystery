@@ -1,4 +1,4 @@
-%%{init: {"theme": "base", "flowchart": {"htmlLabels": true, "curve": "basis", "useMaxWidth": false, "wrappingWidth": 760, "nodeSpacing": 20, "rankSpacing": 14, "padding": 8}, "themeVariables": {"background": "#101820", "primaryColor": "#263745", "primaryTextColor": "#f2f5f8", "primaryBorderColor": "#617180", "lineColor": "#b5c2cc", "clusterBkg": "#1c2935", "clusterBorder": "#617180", "fontFamily": "Arial, Arial Unicode MS, Apple Color Emoji, sans-serif"}, "themeCSS": ".nodeLabel p{line-height:1.35!important;margin:0!important;}.nodeLabel .tone-muted,.nodeLabel .tone-muted *{color:#b5c2cc!important;}.nodeLabel .tone-footnotes,.nodeLabel .tone-footnotes *{color:#b5c2cc!important;}.nodeLabel .tone-white,.nodeLabel .tone-white *{color:#f2f5f8!important;}"}}%%
+%%{init: {"theme": "base", "flowchart": {"htmlLabels": true, "curve": "basis", "useMaxWidth": false, "wrappingWidth": 760, "nodeSpacing": 20, "rankSpacing": 14, "padding": 8, "subGraphTitleMargin": {"top": 0, "bottom": 0}}, "themeVariables": {"background": "#101820", "primaryColor": "#263745", "primaryTextColor": "#f2f5f8", "primaryBorderColor": "#617180", "lineColor": "#b5c2cc", "clusterBkg": "#1c2935", "clusterBorder": "#617180", "fontFamily": "Arial, Arial Unicode MS, Apple Color Emoji, sans-serif"}, "themeCSS": ".nodeLabel p{line-height:1.35!important;margin:0!important;}.nodeLabel .tone-muted,.nodeLabel .tone-muted *{color:#b5c2cc!important;}.nodeLabel .tone-footnotes,.nodeLabel .tone-footnotes *{color:#b5c2cc!important;}.nodeLabel .tone-white,.nodeLabel .tone-white *{color:#f2f5f8!important;}"}}%%
 %% Version 40 — read from bottom up
 flowchart BT
   TY["<b>Typhon 🌪️ · Echidna 🐉 · lovers ❤️</b><br/><span class='tone-muted'>HESIOD · THEOGONY 306–308 (c. 700 BCE)<br/>Typhon is the Greek mythic embodiment of violent, chaotic natural power—a colossal serpentine or draconic being associated especially with storms, destructive winds, volcanic fire, and cosmic rebellion.</span>"] --> ME["<b>MEDEA = ECHIDNA⁵ 🐉</b><br/><span class='tone-muted'>APOLLONIUS · ARGONAUTICA 3.844–866<br/>HESIOD · THEOGONY 295–305</span><br/><br/><b>δράκαινα 🐉 · Priestess · Practitioner of φάρμακα ⚕️</b><br/><span class='tone-muted'>APOLLONIUS · ARGONAUTICA 3.528–533; 4.246–250 (3rd c. BCE)<br/>DIODORUS SICULUS · BIBLIOTHECA HISTORICA 4.51.1–6 (1st c. BCE)</span><br/><br/><b>ENTRY BENEATH THE QUEEN'S KOLPOS 💦</b><br/>Divine transformation<br/><span class='tone-muted'>ORPHIC GOLD TABLET · THURII (4th c. BCE) · OF 488</span><br/><br/><b>Medewanassa 🏹 · The first christ ⚕️</b><br/><span class='tone-muted'>PINDAR · PYTHIAN 4.220–223 (462 BCE)</span>"]
@@ -15,18 +15,9 @@ flowchart BT
 
     subgraph HESM["<div style='text-align:center'><b class='tone-white'>9 HESIODIC MUSES 🎭</b><span class='tone-muted'> · THEOGONY 75–79</span></div>"]
       direction BT
-      subgraph HES_ROW1[" "]
-        direction LR
-        N_KAL["<b>ΚΑΛΛΙΟΠΗ</b><br/><span class='tone-muted'>Epic poetry</span>"] ~~~ N_KLE["<b>ΚΛΕΙΩ</b><br/><span class='tone-muted'>History</span>"] ~~~ N_ERA["<b>ἘΡΑΤΩ</b><br/><span class='tone-muted'>Love poetry</span>"]
-      end
-      subgraph HES_ROW2[" "]
-        direction LR
-        N_EUT["<b>ΕΥΤΕΡΠΗ</b><br/><span class='tone-muted'>Music · Flute</span>"] ~~~ N_MEL["<b>ΜΕΛΠΟΜΕΝΗ</b><br/><span class='tone-muted'>Tragedy</span>"] ~~~ N_TER["<b>ΤΕΡΨΙΧΟΡΗ</b><br/><span class='tone-muted'>Dance</span>"]
-      end
-      subgraph HES_ROW3[" "]
-        direction LR
-        N_POL["<b>ΠΟΛΥΜΝΙΑ</b><br/><span class='tone-muted'>Sacred hymns</span>"] ~~~ N_OUR["<b>ΟΥΡΑΝΙΑ</b><br/><span class='tone-muted'>Astronomy</span>"] ~~~ N_THA["<b>ΘΑΛΕΙΑ</b><br/><span class='tone-muted'>Comedy</span>"]
-      end
+      HES_ROW1["<div style='display:flex;gap:20px'><div style='width:160px;padding:10px 8px;background:#263745;border:1px solid #617180'><b>ΚΑΛΛΙΟΠΗ</b><br/><span class='tone-muted'>Epic poetry</span></div><div style='width:160px;padding:10px 8px;background:#263745;border:1px solid #617180'><b>ΚΛΕΙΩ</b><br/><span class='tone-muted'>History</span></div><div style='width:160px;padding:10px 8px;background:#263745;border:1px solid #617180'><b>ἘΡΑΤΩ</b><br/><span class='tone-muted'>Love poetry</span></div></div>"]
+      HES_ROW2["<div style='display:flex;gap:20px'><div style='width:160px;padding:10px 8px;background:#263745;border:1px solid #617180'><b>ΕΥΤΕΡΠΗ</b><br/><span class='tone-muted'>Music · Flute</span></div><div style='width:160px;padding:10px 8px;background:#263745;border:1px solid #617180'><b>ΜΕΛΠΟΜΕΝΗ</b><br/><span class='tone-muted'>Tragedy</span></div><div style='width:160px;padding:10px 8px;background:#263745;border:1px solid #617180'><b>ΤΕΡΨΙΧΟΡΗ</b><br/><span class='tone-muted'>Dance</span></div></div>"]
+      HES_ROW3["<div style='display:flex;gap:20px'><div style='width:160px;padding:10px 8px;background:#263745;border:1px solid #617180'><b>ΠΟΛΥΜΝΙΑ</b><br/><span class='tone-muted'>Sacred hymns</span></div><div style='width:160px;padding:10px 8px;background:#263745;border:1px solid #617180'><b>ΟΥΡΑΝΙΑ</b><br/><span class='tone-muted'>Astronomy</span></div><div style='width:160px;padding:10px 8px;background:#263745;border:1px solid #617180'><b>ΘΑΛΕΙΑ</b><br/><span class='tone-muted'>Comedy</span></div></div>"]
       HES_ROW3 ~~~ HES_ROW2 ~~~ HES_ROW1
     end
 
@@ -38,7 +29,7 @@ flowchart BT
     direction BT
     subgraph ROADS_ROW[" "]
       direction LR
-      P["<b>FACE · PERSEPHONE 💀</b><br/><span class='tone-muted'>ROAD · </span>Descent ⬇️<br/><span class='tone-muted'>DOMAIN · </span><b>UNDERWORLD⁴ ⬛</b> · <span class='tone-muted'>ᾍδης</span>"] ~~~ A["<b>FACE · APHRODITE ❤️</b><br/><span class='tone-muted'>ROAD · </span>Ascent ⬆️<br/><span class='tone-muted'>DOMAIN · </span><b>HEAVEN ✨</b> · <span class='tone-muted'>Οὐρανός</span>"] ~~~ R["<b>FACE · ARTEMIS 🦌 🏹</b><br/><span class='tone-muted'>ROAD · </span>Return ➕<br/><span class='tone-muted'>DOMAIN · </span><b>EARTH 🌍</b> · <span class='tone-muted'>Γαῖα</span>"]
+      P["<span class='tone-muted'>FACE</span><br/><b>PERSEPHONE 💀</b><br/>↓<br/><span class='tone-muted'>ROAD</span><br/>Descent ⬇️<br/>↓<br/><span class='tone-muted'>DOMAIN</span><br/><b>UNDERWORLD⁴ ⬛</b><br/><span class='tone-muted'>ᾍδης</span>"] ~~~ A["<span class='tone-muted'>FACE</span><br/><b>APHRODITE ❤️</b><br/>↓<br/><span class='tone-muted'>ROAD</span><br/>Ascent ⬆️<br/>↓<br/><span class='tone-muted'>DOMAIN</span><br/><b>HEAVEN ✨</b><br/><span class='tone-muted'>Οὐρανός</span>"] ~~~ R["<span class='tone-muted'>FACE</span><br/><b>ARTEMIS 🦌 🏹</b><br/>↓<br/><span class='tone-muted'>ROAD</span><br/>Return +<br/>↓<br/><span class='tone-muted'>DOMAIN</span><br/><b>EARTH 🌍</b><br/><span class='tone-muted'>Γαῖα</span>"]
     end
     ROAD_SEQUENCE["<b>Earth 🌍 → Underworld ⬛ → Heaven ✨ → Earth 🌍</b><br/><span class='tone-muted'>Initiatory sequence<br/>PINDAR FR. 133 · ORPHIC GOLD TABLETS (THURII) · PLATO, REPUBLIC 10.614b–621d</span>"]
     ROAD_SEQUENCE ~~~ ROADS_ROW
@@ -48,18 +39,9 @@ flowchart BT
 
   subgraph ISIS_PANEL["<div style='text-align:center'><b class='tone-white'>ISIS ☥</b><br/><b class='tone-white'>MANY-NAMED · MANY-FORMED GODDESS</b><br/><span class='tone-muted'>ISIDORUS · HYMN TO ISIS 1.14–26 (c. 100–80 BCE)<br/>P.OXY. XI 1380 · HYMN TO ISIS (2nd c. CE)<br/>One divine power · Multiple identities and manifestations</span><br/><b class='tone-white'>Leader of the Muses · μουσαναγωγός</b><br/><span class='tone-muted'>P.OXY. XI 1380.62</span></div>"]
     direction BT
-    subgraph ISIS_ROW1[" "]
-      direction LR
-      I_HEK["<b>🌒 🌕 🌘 HEKATE ⊕ 🔥🔥</b><br/><span class='tone-muted'>Crossroads · Guidance</span>"] ~~~ I_ART["<b>ARTEMIS / DIANA⁶ 🌍 🦌 🏹</b><br/><span class='tone-muted'>Earth · Wilds</span>"] ~~~ I_PER["<b>PERSEPHONE / AMPHITRITE⁴ 💀</b><br/><span class='tone-muted'>Underworld · Abyss · Chthonic</span>"]
-    end
-    subgraph ISIS_ROW2[" "]
-      direction LR
-      I_SEL["<b>SELENE 🌙</b><br/><span class='tone-muted'>Moon · Invocation</span>"] ~~~ I_APH["<b>APHRODITE ❤️</b><br/><span class='tone-muted'>Ouranos · Desire</span>"] ~~~ I_HER["<b>HERA 👑</b><br/><span class='tone-muted'>Marriage · Sovereignty</span>"]
-    end
-    subgraph ISIS_ROW3[" "]
-      direction LR
-      I_DEM["<b>DEMETER 🌾</b><br/><span class='tone-muted'>Grain · Mysteries</span>"] ~~~ I_RHE["<b>RHEA 🤱</b><br/><span class='tone-muted'>Divine Mother</span>"] ~~~ I_HES["<b>HESTIA 🔥</b><br/><span class='tone-muted'>Sacred Hearth</span>"]
-    end
+    ISIS_ROW1["<div style='display:flex;gap:20px'><div style='width:235px;padding:10px 8px;background:#263745;border:1px solid #617180'><b>🌒 🌕 🌘 HEKATE ⊕ 🔥🔥</b><br/><span class='tone-muted'>Crossroads · Guidance</span></div><div style='width:235px;padding:10px 8px;background:#263745;border:1px solid #617180'><b>ARTEMIS / DIANA⁶ 🌍 🦌 🏹</b><br/><span class='tone-muted'>Earth · Wilds</span></div><div style='width:235px;padding:10px 8px;background:#263745;border:1px solid #617180'><b>PERSEPHONE / AMPHITRITE⁴ 💀</b><br/><span class='tone-muted'>Underworld · Abyss · Chthonic</span></div></div>"]
+    ISIS_ROW2["<div style='display:flex;gap:20px'><div style='width:235px;padding:10px 8px;background:#263745;border:1px solid #617180'><b>SELENE 🌙</b><br/><span class='tone-muted'>Moon · Invocation</span></div><div style='width:235px;padding:10px 8px;background:#263745;border:1px solid #617180'><b>APHRODITE ❤️</b><br/><span class='tone-muted'>Ouranos · Desire</span></div><div style='width:235px;padding:10px 8px;background:#263745;border:1px solid #617180'><b>HERA 👑</b><br/><span class='tone-muted'>Marriage · Sovereignty</span></div></div>"]
+    ISIS_ROW3["<div style='display:flex;gap:20px'><div style='width:235px;padding:10px 8px;background:#263745;border:1px solid #617180'><b>DEMETER 🌾</b><br/><span class='tone-muted'>Grain · Mysteries</span></div><div style='width:235px;padding:10px 8px;background:#263745;border:1px solid #617180'><b>RHEA 🤱</b><br/><span class='tone-muted'>Divine Mother</span></div><div style='width:235px;padding:10px 8px;background:#263745;border:1px solid #617180'><b>HESTIA 🔥</b><br/><span class='tone-muted'>Sacred Hearth</span></div></div>"]
 
     ISIS_ROW3 ~~~ ISIS_ROW2 ~~~ ISIS_ROW1
   end
@@ -73,7 +55,7 @@ flowchart BT
   classDef heading fill:#263745,stroke:#6bb5e9,color:#f2f5f8,stroke-width:2px;
   classDef normal fill:#263745,stroke:#617180,color:#f2f5f8;
   class TITLE,H,SEL heading;
-  class TY,ME,P,A,R,B_MEL,B_MNE,B_AOI,N_KAL,N_KLE,N_ERA,N_EUT,N_MEL,N_TER,N_POL,N_OUR,N_THA,I_HEK,I_ART,I_PER,I_SEL,I_APH,I_HER,I_DEM,I_RHE,I_HES normal;
+  class TY,ME,P,A,R,B_MEL,B_MNE,B_AOI normal;
   style BOE fill:none,stroke:#617180,stroke-width:2px,stroke-dasharray:4 4
   style HESM fill:none,stroke:#617180,stroke-width:2px,stroke-dasharray:4 4
   style HES_ROW1 fill:none,stroke:none
