@@ -11,9 +11,9 @@
       padding: 12px 18px; background: rgba(16,24,32,.96); border-bottom: 1px solid #617180; }
     a, button { color: #8dcbf4; }
     button { border: 1px solid #617180; border-radius: 6px; padding: 6px 10px; background: #263745; cursor: pointer; }
-    main { padding: 20px; overflow: auto; }
-    #diagram { min-width: 1200px; }
-    #diagram svg { max-width: none !important; height: auto; }
+    main { padding: 20px; overflow-x: hidden; }
+    #diagram { width: 100%; }
+    #diagram svg { display: block; width: 100% !important; max-width: 100% !important; height: auto !important; }
     #diagram .cluster-label .nodeLabel div { text-align: center !important; }
     #diagram g.node foreignObject > div { line-height: 1.35 !important; }
     #error { display: none; white-space: pre-wrap; padding: 16px; color: #ffd2d2; }
