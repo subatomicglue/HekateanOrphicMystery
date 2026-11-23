@@ -36,10 +36,22 @@ if [ ! -f "$svg" ]; then
   exit 1
 fi
 
-echo "Rendering PNG at ${width}px wide with maximum lossless compression..."
-magick -background '#101820' \
+# SVG/CSS pixels are defined at 96 DPI. Render at the requested resolution
+# directly so vectors and text are not rasterized small and then enlarged.
+native_width=1100
+density=$(awk -v requested="$width" -v native="$native_width" \
+  'BEGIN { printf "%.8f", 96 * requested / native }')
+
+echo "Rendering PNG directly at ${width}px wide with maximum lossless compression..."
+magick -density "$density" \
+  -background '#101820' \
   "$svg" \
   -resize "${width}x" \
+  -alpha remove \
+  -alpha off \
+  -depth 8 \
+  -strip \
+  -type TrueColor \
   -define png:compression-filter=5 \
   -define png:compression-level=9 \
   -define png:compression-strategy=1 \
