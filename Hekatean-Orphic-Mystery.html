@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Hekatean-Orphic Mystery — Mermaid Preview</title>
+  <title>Hekatean-Orphic Mystery</title>
   <style>
     :root { color-scheme: dark; font-family: Arial, "Arial Unicode MS", "Apple Color Emoji", sans-serif; }
     body { margin: 0; background: #101820; color: #f2f5f8; }
@@ -56,7 +56,7 @@
     });
 
     if (location.protocol === 'file:') {
-      showError('Direct-file mode: choose the adjacent Hekatean-Orphic-Mystery.mmd file, or use the included preview launcher for automatic loading.');
+      showError('Direct-file mode: choose the adjacent .mmd file, or use the included preview launcher for automatic loading.');
     } else {
       loadAdjacentSource().then(renderSource).catch(error => {
         showError(error.message + '\n\nClick “Choose .mmd file” to select the source manually.');
